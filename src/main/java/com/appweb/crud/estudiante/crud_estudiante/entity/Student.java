@@ -1,4 +1,4 @@
-package com.appweb.crud.estudiante.crud_estudiante.entitie;
+package com.appweb.crud.estudiante.crud_estudiante.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -29,6 +29,12 @@ public class Student {
 
     public Student(Long id, String name, String lastName, String email) {
         this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+    public Student(String name, String lastName, String email) {
         this.name = name;
         this.lastName = lastName;
         this.email = email;
